@@ -1,0 +1,5802 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2021-04-14T06:10:08.394Z",
+        "before": [
+          {
+            "result": {
+              "duration": 727000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 17,
+        "name": "Verify that Create Gist API works in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-create-gist-api-works-in-various-conditions;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 504000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user sets base URL and endpoint as \"/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user adds \"Accept\" as \"application/vnd.github.v3+json\" in header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Accept\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"application/vnd.github.v3+json\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_as_in_header(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user adds description to gist as \"Test files\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test files\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_description_to_gist_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user makes gist as \"private\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"private\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_gist_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user creates payload body with 5 files",
+            "match": {
+              "arguments": [
+                {
+                  "val": "5",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_creates_payload_body_with_files(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1752000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user makes \"POST\" request to endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user validates response code as 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 645000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user validates JSON schema for request for Status code 201 for create gist API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_create_gist_api(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 589000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user validates data received in json response for create gist request",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_validates_data_received_in_json_response_for_create_gist_request()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CreateGist"
+          },
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:12.707Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 18,
+        "name": "Verify that Create Gist API works in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-create-gist-api-works-in-various-conditions;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 506000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user sets base URL and endpoint as \"/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user adds \"Accept\" as \"application/json\" in header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Accept\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"application/json\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_as_in_header(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user adds description to gist as \"Test data\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test data\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_description_to_gist_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user makes gist as \"public\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"public\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_gist_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user creates payload body with 3 files",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_creates_payload_body_with_files(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 775000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user makes \"POST\" request to endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user validates response code as 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 31000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user validates JSON schema for request for Status code 201 for create gist API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_create_gist_api(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 109000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user validates data received in json response for create gist request",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_validates_data_received_in_json_response_for_create_gist_request()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CreateGist"
+          },
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:14.143Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 19,
+        "name": "Verify that Create Gist API works in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-create-gist-api-works-in-various-conditions;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 486000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user sets base URL and endpoint as \"/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user adds \"Accept\" as \"application/json\" in header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Accept\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"application/json\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_as_in_header(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user adds description to gist as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_description_to_gist_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user makes gist as \"public\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"public\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_gist_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user creates payload body with 2 files",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_creates_payload_body_with_files(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 966000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user makes \"POST\" request to endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user validates response code as 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 22000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user validates JSON schema for request for Status code 201 for create gist API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_create_gist_api(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 82000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user validates data received in json response for create gist request",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_validates_data_received_in_json_response_for_create_gist_request()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CreateGist"
+          },
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:15.710Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 20,
+        "name": "Verify that Create Gist API works in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-create-gist-api-works-in-various-conditions;;5",
+        "after": [
+          {
+            "result": {
+              "duration": 487000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user sets base URL and endpoint as \"/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user adds \"Accept\" as \"application/x-www-form-urlencoded\" in header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Accept\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"application/x-www-form-urlencoded\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_as_in_header(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user adds description to gist as \"00000000000\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"00000000000\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_description_to_gist_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user makes gist as \"private\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"private\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_gist_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user creates payload body with 2 files",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_creates_payload_body_with_files(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 668000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user makes \"POST\" request to endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user validates response code as 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 18000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user validates JSON schema for request for Status code 201 for create gist API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_create_gist_api(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 65000000,
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user validates data received in json response for create gist request",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_validates_data_received_in_json_response_for_create_gist_request()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CreateGist"
+          },
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:16.960Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 21,
+        "name": "Verify that Create Gist API works in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-create-gist-api-works-in-various-conditions;;6",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user sets base URL and endpoint as \"/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user adds \"Accept\" as \"application/vnd.github.v3+json\" in header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Accept\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"application/vnd.github.v3+json\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_as_in_header(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user adds description to gist as \"asdasdasd\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"asdasdasd\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_description_to_gist_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user makes gist as \"public\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"public\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_gist_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user creates payload body with 0 files",
+            "match": {
+              "arguments": [
+                {
+                  "val": "0",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_creates_payload_body_with_files(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 350000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user makes \"POST\" request to endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user validates response code as 422",
+            "match": {
+              "arguments": [
+                {
+                  "val": "422",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 23000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user validates JSON schema for request for Status code 422 for create gist API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "422",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_create_gist_api(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user validates data received in json response for create gist request",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_validates_data_received_in_json_response_for_create_gist_request()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CreateGist"
+          },
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:17.341Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 22,
+        "name": "Verify that Create Gist API works in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-create-gist-api-works-in-various-conditions;;7",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "user sets base URL and endpoint as \"/gistsss\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gistsss\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "user adds \"Accept\" as \"application/vnd.github.v3+json\" in header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Accept\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"application/vnd.github.v3+json\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_as_in_header(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "user adds description to gist as \"asdasdasd\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"asdasdasd\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_description_to_gist_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 8,
+            "name": "user makes gist as \"public\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"public\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_gist_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 9,
+            "name": "user creates payload body with 3 files",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_creates_payload_body_with_files(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 320000000,
+              "status": "passed"
+            },
+            "line": 10,
+            "name": "user makes \"POST\" request to endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 11,
+            "name": "user validates response code as 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 25000000,
+              "status": "passed"
+            },
+            "line": 12,
+            "name": "user validates JSON schema for request for Status code 404 for create gist API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_create_gist_api(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 13,
+            "name": "user validates data received in json response for create gist request",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_validates_data_received_in_json_response_for_create_gist_request()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CreateGist"
+          },
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:17.696Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 42,
+        "name": "Verify that Read Gist API works in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-read-gist-api-works-in-various-conditions;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 458000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 26,
+            "name": "user sets base URL and endpoint as \"/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 27,
+            "name": "user adds \"Accept\" as \"application/vnd.github.v3+json\" in header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Accept\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"application/vnd.github.v3+json\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_as_in_header(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 28,
+            "name": "user adds description to gist as \"Test files\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test files\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_description_to_gist_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 29,
+            "name": "user makes gist as \"private\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"private\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_gist_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 30,
+            "name": "user creates payload body with 2 files",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_creates_payload_body_with_files(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 892000000,
+              "status": "passed"
+            },
+            "line": 31,
+            "name": "user makes \"POST\" request to endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 32,
+            "name": "user validates response code as 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14000000,
+              "status": "passed"
+            },
+            "line": 33,
+            "name": "user validates JSON schema for request for Status code 201 for create gist API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_create_gist_api(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63000000,
+              "status": "passed"
+            },
+            "line": 34,
+            "name": "user validates data received in json response for create gist request",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_validates_data_received_in_json_response_for_create_gist_request()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 35,
+            "name": "user sets base URL and endpoint as \"/gists/{gist_Id}\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists/{gist_Id}\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 634000000,
+              "status": "passed"
+            },
+            "line": 36,
+            "name": "user makes \"GET\" request to endpoint with path params \"gist_Id\" as \"CreatedAbove\" with \"auth\" token",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"gist_Id\"",
+                  "offset": 54
+                },
+                {
+                  "val": "\"CreatedAbove\"",
+                  "offset": 67
+                },
+                {
+                  "val": "\"auth\"",
+                  "offset": 87
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint_with_path_params_as_with_token(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 37,
+            "name": "user validates response code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 14000000,
+              "status": "passed"
+            },
+            "line": 38,
+            "name": "user validates JSON schema for request for Status code 200 for read gist API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_read_gist_api(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CreateAndReadGist"
+          },
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:19.784Z",
+        "before": [
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 66,
+        "name": "Verify that Delete Gist API works in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-delete-gist-api-works-in-various-conditions;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 302000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "user sets base URL and endpoint as \"/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "user adds \"Accept\" as \"application/vnd.github.v3+json\" in header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Accept\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"application/vnd.github.v3+json\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_as_in_header(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "user adds description to gist as \"Test files\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Test files\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_description_to_gist_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "user makes gist as \"private\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"private\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_gist_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "user creates payload body with 2 files",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_creates_payload_body_with_files(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 940000000,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "user makes \"POST\" request to endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "user validates response code as 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 13000000,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "user validates JSON schema for request for Status code 201 for create gist API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_create_gist_api(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 63000000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "user validates data received in json response for create gist request",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_validates_data_received_in_json_response_for_create_gist_request()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "user sets base URL and endpoint as \"/gists/{gist_Id}\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists/{gist_Id}\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 515000000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "user makes \"DELETE\" request to endpoint with path params \"gist_Id\" as \"CreatedAbove\" with \"auth\" token",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DELETE\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"gist_Id\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"CreatedAbove\"",
+                  "offset": 70
+                },
+                {
+                  "val": "\"auth\"",
+                  "offset": 90
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint_with_path_params_as_with_token(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "user validates response code as 204",
+            "match": {
+              "arguments": [
+                {
+                  "val": "204",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 316000000,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "user makes \"GET\" request to endpoint with path params \"gist_Id\" as \"CreatedAbove\" with \"auth\" token",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"gist_Id\"",
+                  "offset": 54
+                },
+                {
+                  "val": "\"CreatedAbove\"",
+                  "offset": 67
+                },
+                {
+                  "val": "\"auth\"",
+                  "offset": 87
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint_with_path_params_as_with_token(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "user validates response code as 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "user validates JSON schema for request for Status code 404 for read gist API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_read_gist_api(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CreateAndDeleteAndVerifyDeletedGist"
+          },
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:21.949Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 67,
+        "name": "Verify that Delete Gist API works in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-delete-gist-api-works-in-various-conditions;;3",
+        "after": [
+          {
+            "result": {
+              "duration": 331000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "user sets base URL and endpoint as \"/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "user adds \"Accept\" as \"application/json\" in header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Accept\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"application/json\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_as_in_header(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "user adds description to gist as \"ABCCD\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"ABCCD\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_description_to_gist_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "user makes gist as \"public\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"public\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_gist_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "user creates payload body with 3 files",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_creates_payload_body_with_files(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 649000000,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "user makes \"POST\" request to endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "user validates response code as 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11000000,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "user validates JSON schema for request for Status code 201 for create gist API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_create_gist_api(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 100000000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "user validates data received in json response for create gist request",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_validates_data_received_in_json_response_for_create_gist_request()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "user sets base URL and endpoint as \"/gists/{gist_Id}\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists/{gist_Id}\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 490000000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "user makes \"DELETE\" request to endpoint with path params \"gist_Id\" as \"CreatedAbove\" with \"auth\" token",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DELETE\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"gist_Id\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"CreatedAbove\"",
+                  "offset": 70
+                },
+                {
+                  "val": "\"auth\"",
+                  "offset": 90
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint_with_path_params_as_with_token(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "user validates response code as 204",
+            "match": {
+              "arguments": [
+                {
+                  "val": "204",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 309000000,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "user makes \"GET\" request to endpoint with path params \"gist_Id\" as \"CreatedAbove\" with \"auth\" token",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"gist_Id\"",
+                  "offset": 54
+                },
+                {
+                  "val": "\"CreatedAbove\"",
+                  "offset": 67
+                },
+                {
+                  "val": "\"auth\"",
+                  "offset": 87
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint_with_path_params_as_with_token(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "user validates response code as 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "user validates JSON schema for request for Status code 404 for read gist API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_read_gist_api(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CreateAndDeleteAndVerifyDeletedGist"
+          },
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:23.850Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 68,
+        "name": "Verify that Delete Gist API works in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-delete-gist-api-works-in-various-conditions;;4",
+        "after": [
+          {
+            "result": {
+              "duration": 470000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 48,
+            "name": "user sets base URL and endpoint as \"/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 49,
+            "name": "user adds \"Accept\" as \"application/json\" in header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Accept\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"application/json\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_as_in_header(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 50,
+            "name": "user adds description to gist as \"Random\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Random\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_description_to_gist_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 51,
+            "name": "user makes gist as \"public\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"public\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_gist_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 52,
+            "name": "user creates payload body with 3 files",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_creates_payload_body_with_files(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 812000000,
+              "status": "passed"
+            },
+            "line": 53,
+            "name": "user makes \"POST\" request to endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 54,
+            "name": "user validates response code as 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 12000000,
+              "status": "passed"
+            },
+            "line": 55,
+            "name": "user validates JSON schema for request for Status code 201 for create gist API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_create_gist_api(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 90000000,
+              "status": "passed"
+            },
+            "line": 56,
+            "name": "user validates data received in json response for create gist request",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_validates_data_received_in_json_response_for_create_gist_request()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 57,
+            "name": "user sets base URL and endpoint as \"/gists/{gist_Id}\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists/{gist_Id}\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 340000000,
+              "status": "passed"
+            },
+            "line": 58,
+            "name": "user makes \"DELETE\" request to endpoint with path params \"gist_Id\" as \"WrongGist\" with \"auth\" token",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"DELETE\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"gist_Id\"",
+                  "offset": 57
+                },
+                {
+                  "val": "\"WrongGist\"",
+                  "offset": 70
+                },
+                {
+                  "val": "\"auth\"",
+                  "offset": 87
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint_with_path_params_as_with_token(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 59,
+            "name": "user validates response code as 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 308000000,
+              "status": "passed"
+            },
+            "line": 60,
+            "name": "user makes \"GET\" request to endpoint with path params \"gist_Id\" as \"WrongGist\" with \"auth\" token",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"gist_Id\"",
+                  "offset": 54
+                },
+                {
+                  "val": "\"WrongGist\"",
+                  "offset": 67
+                },
+                {
+                  "val": "\"auth\"",
+                  "offset": 84
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint_with_path_params_as_with_token(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 61,
+            "name": "user validates response code as 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 62,
+            "name": "user validates JSON schema for request for Status code 404 for read gist API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_read_gist_api(java.lang.Integer)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CreateAndDeleteAndVerifyDeletedGist"
+          },
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:25.894Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 80,
+        "name": "Verify that Read Gist API works for unauthenticated user in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-read-gist-api-works-for-unauthenticated-user-in-various-conditions;;2",
+        "after": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "user sets base URL and endpoint as \"/users/{username}/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/users/{username}/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 891000000,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "user makes \"GET\" request to endpoint with path params \"username\" as \"aakashdahake\" with \"auth\" token",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"username\"",
+                  "offset": 54
+                },
+                {
+                  "val": "\"aakashdahake\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"auth\"",
+                  "offset": 88
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint_with_path_params_as_with_token(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "user validates response code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 114000000,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "user validates JSON schema for request for Status code 200 for list user gists",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_list_user_gists(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 34000000,
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "user validates data received in json response for listing user as \"aakashdahake\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"aakashdahake\"",
+                  "offset": 66
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_data_received_in_json_response_for_listing_user_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ReadUnauthenticatedUserGist"
+          },
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:26.941Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 81,
+        "name": "Verify that Read Gist API works for unauthenticated user in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-read-gist-api-works-for-unauthenticated-user-in-various-conditions;;3",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "user sets base URL and endpoint as \"/users/{username}/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/users/{username}/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 314000000,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "user makes \"GET\" request to endpoint with path params \"username\" as \"********************\" with \"auth\" token",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"username\"",
+                  "offset": 54
+                },
+                {
+                  "val": "\"********************\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"auth\"",
+                  "offset": 96
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint_with_path_params_as_with_token(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "user validates response code as 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "user validates JSON schema for request for Status code 404 for list user gists",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_list_user_gists(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "user validates data received in json response for listing user as \"********************\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"********************\"",
+                  "offset": 66
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_data_received_in_json_response_for_listing_user_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ReadUnauthenticatedUserGist"
+          },
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:27.262Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 82,
+        "name": "Verify that Read Gist API works for unauthenticated user in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-read-gist-api-works-for-unauthenticated-user-in-various-conditions;;4",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 72,
+            "name": "user sets base URL and endpoint as \"/users/{username}/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/users/{username}/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 336000000,
+              "status": "passed"
+            },
+            "line": 73,
+            "name": "user makes \"GET\" request to endpoint with path params \"username\" as \"\" with \"auth\" token",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"username\"",
+                  "offset": 54
+                },
+                {
+                  "val": "\"\"",
+                  "offset": 68
+                },
+                {
+                  "val": "\"auth\"",
+                  "offset": 76
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint_with_path_params_as_with_token(java.lang.String,java.lang.String,java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 74,
+            "name": "user validates response code as 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 75,
+            "name": "user validates JSON schema for request for Status code 404 for list user gists",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_list_user_gists(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 76,
+            "name": "user validates data received in json response for listing user as \"\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"\"",
+                  "offset": 66
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_data_received_in_json_response_for_listing_user_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ReadUnauthenticatedUserGist"
+          },
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:27.607Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 97,
+        "name": "Verify that Read Gist API works for authenticated users token in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-read-gist-api-works-for-authenticated-users-token-in-various-conditions;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "user sets base URL and endpoint as \"/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "user adds query param \"since\" as \"2021-03-26T03:19:53.895Z\" to endpoint path",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"since\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"2021-03-26T03:19:53.895Z\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_query_param_as_to_endpoint_path(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "user adds query param \"per_page\" as \"1\" to endpoint path",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"per_page\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_query_param_as_to_endpoint_path(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "user adds query param \"page\" as \"1\" to endpoint path",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"page\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_query_param_as_to_endpoint_path(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 539000000,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "user makes \"GET\" request to endpoint with query params with \"auth\" token",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"auth\"",
+                  "offset": 60
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint_with_query_params_with_token(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "user validates response code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "user validates JSON schema for request for Status code 200 for list authenticated user gists",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_list_authenticated_user_gists(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 104000000,
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "user validates data received in json response for listing authenticated user gists",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_validates_data_received_in_json_response_for_listing_authenticated_user_gists()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ReadAuthenticatedUserGists"
+          },
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:28.262Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 98,
+        "name": "Verify that Read Gist API works for authenticated users token in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-read-gist-api-works-for-authenticated-users-token-in-various-conditions;;3",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "user sets base URL and endpoint as \"/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "user adds query param \"since\" as \"2021-04-26T03:19:53.895Z\" to endpoint path",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"since\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"2021-04-26T03:19:53.895Z\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_query_param_as_to_endpoint_path(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "user adds query param \"per_page\" as \"0\" to endpoint path",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"per_page\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"0\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_query_param_as_to_endpoint_path(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "user adds query param \"page\" as \"1\" to endpoint path",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"page\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_query_param_as_to_endpoint_path(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 332000000,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "user makes \"GET\" request to endpoint with query params with \"auth\" token",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"auth\"",
+                  "offset": 60
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint_with_query_params_with_token(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "user validates response code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "user validates JSON schema for request for Status code 200 for list authenticated user gists",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_list_authenticated_user_gists(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "user validates data received in json response for listing authenticated user gists",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_validates_data_received_in_json_response_for_listing_authenticated_user_gists()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ReadAuthenticatedUserGists"
+          },
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:28.606Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 99,
+        "name": "Verify that Read Gist API works for authenticated users token in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-read-gist-api-works-for-authenticated-users-token-in-various-conditions;;4",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "user sets base URL and endpoint as \"/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "user adds query param \"since\" as \"2021-03-20T03:19:53.895Z\" to endpoint path",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"since\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"2021-03-20T03:19:53.895Z\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_query_param_as_to_endpoint_path(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "user adds query param \"per_page\" as \"5\" to endpoint path",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"per_page\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"5\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_query_param_as_to_endpoint_path(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "user adds query param \"page\" as \"0\" to endpoint path",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"page\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"0\"",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_query_param_as_to_endpoint_path(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 446000000,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "user makes \"GET\" request to endpoint with query params with \"auth\" token",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"auth\"",
+                  "offset": 60
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint_with_query_params_with_token(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "user validates response code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "user validates JSON schema for request for Status code 200 for list authenticated user gists",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_list_authenticated_user_gists(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "user validates data received in json response for listing authenticated user gists",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_validates_data_received_in_json_response_for_listing_authenticated_user_gists()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ReadAuthenticatedUserGists"
+          },
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:29.068Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 100,
+        "name": "Verify that Read Gist API works for authenticated users token in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-read-gist-api-works-for-authenticated-users-token-in-various-conditions;;5",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "user sets base URL and endpoint as \"/gistss\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gistss\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "user adds query param \"since\" as \"2021-03-26T03:19:53.895Z\" to endpoint path",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"since\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"2021-03-26T03:19:53.895Z\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_query_param_as_to_endpoint_path(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "user adds query param \"per_page\" as \"1\" to endpoint path",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"per_page\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_query_param_as_to_endpoint_path(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "user adds query param \"page\" as \"1\" to endpoint path",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"page\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_query_param_as_to_endpoint_path(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 299000000,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "user makes \"GET\" request to endpoint with query params with \"auth\" token",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"auth\"",
+                  "offset": 60
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint_with_query_params_with_token(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "user validates response code as 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "user validates JSON schema for request for Status code 404 for list authenticated user gists",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_list_authenticated_user_gists(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "user validates data received in json response for listing authenticated user gists",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_validates_data_received_in_json_response_for_listing_authenticated_user_gists()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ReadAuthenticatedUserGists"
+          },
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:29.375Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 101,
+        "name": "Verify that Read Gist API works for authenticated users token in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-read-gist-api-works-for-authenticated-users-token-in-various-conditions;;6",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 86,
+            "name": "user sets base URL and endpoint as \"/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 87,
+            "name": "user adds query param \"since\" as \"2****///****\" to endpoint path",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"since\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"2****///****\"",
+                  "offset": 33
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_query_param_as_to_endpoint_path(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 88,
+            "name": "user adds query param \"per_page\" as \"1\" to endpoint path",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"per_page\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 36
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_query_param_as_to_endpoint_path(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 89,
+            "name": "user adds query param \"page\" as \"1\" to endpoint path",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"page\"",
+                  "offset": 22
+                },
+                {
+                  "val": "\"1\"",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_query_param_as_to_endpoint_path(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 353000000,
+              "status": "passed"
+            },
+            "line": 90,
+            "name": "user makes \"GET\" request to endpoint with query params with \"auth\" token",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"auth\"",
+                  "offset": 60
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint_with_query_params_with_token(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 91,
+            "name": "user validates response code as 422",
+            "match": {
+              "arguments": [
+                {
+                  "val": "422",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 3000000,
+              "status": "passed"
+            },
+            "line": 92,
+            "name": "user validates JSON schema for request for Status code 422 for list authenticated user gists",
+            "match": {
+              "arguments": [
+                {
+                  "val": "422",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_list_authenticated_user_gists(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 93,
+            "name": "user validates data received in json response for listing authenticated user gists",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_validates_data_received_in_json_response_for_listing_authenticated_user_gists()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ReadAuthenticatedUserGists"
+          },
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:29.737Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 116,
+        "name": "Verify that List Gist API works for authenticated users token in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-list-gist-api-works-for-authenticated-users-token-in-various-conditions;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "user sets base URL and endpoint as \"/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "user adds \"Accept\" as \"application/vnd.github.v3+json\" in header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Accept\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"application/vnd.github.v3+json\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_as_in_header(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 891000000,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "user makes \"GET\" request to endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "user validates response code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "user validates JSON schema for request for Status code 200 for list authenticated user gists",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_list_authenticated_user_gists(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 9000000,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "user validates data received in json response for listing authenticated user gists",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_validates_data_received_in_json_response_for_listing_authenticated_user_gists()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ReadPublicGists"
+          },
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:30.647Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 117,
+        "name": "Verify that List Gist API works for authenticated users token in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-list-gist-api-works-for-authenticated-users-token-in-various-conditions;;3",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "user sets base URL and endpoint as \"/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "user adds \"Accept\" as \"application/json\" in header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Accept\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"application/json\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_as_in_header(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 887000000,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "user makes \"GET\" request to endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "user validates response code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "user validates JSON schema for request for Status code 200 for list authenticated user gists",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_list_authenticated_user_gists(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "user validates data received in json response for listing authenticated user gists",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_validates_data_received_in_json_response_for_listing_authenticated_user_gists()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ReadPublicGists"
+          },
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:31.549Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 118,
+        "name": "Verify that List Gist API works for authenticated users token in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-list-gist-api-works-for-authenticated-users-token-in-various-conditions;;4",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "user sets base URL and endpoint as \"/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "user adds \"Accept\" as \"application/vnd.github.VERSION.base64\" in header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Accept\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"application/vnd.github.VERSION.base64\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_as_in_header(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 871000000,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "user makes \"GET\" request to endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "user validates response code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "user validates JSON schema for request for Status code 200 for list authenticated user gists",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_list_authenticated_user_gists(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "user validates data received in json response for listing authenticated user gists",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_validates_data_received_in_json_response_for_listing_authenticated_user_gists()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ReadPublicGists"
+          },
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:32.435Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 119,
+        "name": "Verify that List Gist API works for authenticated users token in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-list-gist-api-works-for-authenticated-users-token-in-various-conditions;;5",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "user sets base URL and endpoint as \"/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "user adds \"Accept\" as \"application/vnd.github.VERSION.raw\" in header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Accept\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"application/vnd.github.VERSION.raw\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_as_in_header(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 605000000,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "user makes \"GET\" request to endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "user validates response code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 4000000,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "user validates JSON schema for request for Status code 200 for list authenticated user gists",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_list_authenticated_user_gists(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 6000000,
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "user validates data received in json response for listing authenticated user gists",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_validates_data_received_in_json_response_for_listing_authenticated_user_gists()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ReadPublicGists"
+          },
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:33.057Z",
+        "before": [
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 120,
+        "name": "Verify that List Gist API works for authenticated users token in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-list-gist-api-works-for-authenticated-users-token-in-various-conditions;;6",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 105,
+            "name": "user sets base URL and endpoint as \"/gistss\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gistss\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 106,
+            "name": "user adds \"Accept\" as \"application/vnd.github.v3+json\" in header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Accept\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"application/vnd.github.v3+json\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_as_in_header(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 297000000,
+              "status": "passed"
+            },
+            "line": 107,
+            "name": "user makes \"GET\" request to endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 108,
+            "name": "user validates response code as 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 109,
+            "name": "user validates JSON schema for request for Status code 404 for list authenticated user gists",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_list_authenticated_user_gists(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 110,
+            "name": "user validates data received in json response for listing authenticated user gists",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_validates_data_received_in_json_response_for_listing_authenticated_user_gists()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@ReadPublicGists"
+          },
+          {
+            "name": "@FunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:33.364Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 140,
+        "name": "Verify that Rate Limit API works for authenticated users token in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-rate-limit-api-works-for-authenticated-users-token-in-various-conditions;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 124,
+            "name": "user sets base URL and endpoint as \"/rate_limit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/rate_limit\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 320000000,
+              "status": "passed"
+            },
+            "line": 125,
+            "name": "user makes \"GET\" request to endpoint with query params with \"auth\" token",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"auth\"",
+                  "offset": 60
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint_with_query_params_with_token(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 126,
+            "name": "user validates response code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 14000000,
+              "status": "passed"
+            },
+            "line": 127,
+            "name": "user validates JSON schema for request for Status code 200 for rate limit stats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_rate_limit_stats(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 24000000,
+              "status": "passed"
+            },
+            "line": 128,
+            "name": "user captures rate limit statistics for comparison",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_captures_rate_limit_statistics_for_comparison()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 129,
+            "name": "user sets base URL and endpoint as \"/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 130,
+            "name": "user adds \"Accept\" as \"application/vnd.github.v3+json\" in header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Accept\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"application/vnd.github.v3+json\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_as_in_header(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 886000000,
+              "status": "passed"
+            },
+            "line": 131,
+            "name": "user makes \"GET\" request to endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 132,
+            "name": "user sets base URL and endpoint as \"/rate_limit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/rate_limit\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 294000000,
+              "status": "passed"
+            },
+            "line": 133,
+            "name": "user makes \"GET\" request to endpoint with query params with \"auth\" token",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"auth\"",
+                  "offset": 60
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint_with_query_params_with_token(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 134,
+            "name": "user validates response code as 200",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 5000000,
+              "status": "passed"
+            },
+            "line": 135,
+            "name": "user validates JSON schema for request for Status code 200 for rate limit stats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "200",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_rate_limit_stats(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 11000000,
+              "status": "passed"
+            },
+            "line": 136,
+            "name": "user validates rate limit statistics",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_validates_rate_limit_statistics()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetRateLimit"
+          },
+          {
+            "name": "@NonFunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:34.926Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 141,
+        "name": "Verify that Rate Limit API works for authenticated users token in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-rate-limit-api-works-for-authenticated-users-token-in-various-conditions;;3",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 124,
+            "name": "user sets base URL and endpoint as \"/rate_limit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/rate_limit\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 313000000,
+              "status": "passed"
+            },
+            "line": 125,
+            "name": "user makes \"GET\" request to endpoint with query params with \"wrong_auth\" token",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"wrong_auth\"",
+                  "offset": 60
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint_with_query_params_with_token(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 126,
+            "name": "user validates response code as 401",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 127,
+            "name": "user validates JSON schema for request for Status code 401 for rate limit stats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_rate_limit_stats(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 128,
+            "name": "user captures rate limit statistics for comparison",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_captures_rate_limit_statistics_for_comparison()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 129,
+            "name": "user sets base URL and endpoint as \"/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 130,
+            "name": "user adds \"Accept\" as \"application/vnd.github.v3+json\" in header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Accept\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"application/vnd.github.v3+json\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_as_in_header(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 625000000,
+              "status": "passed"
+            },
+            "line": 131,
+            "name": "user makes \"GET\" request to endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 132,
+            "name": "user sets base URL and endpoint as \"/rate_limit\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/rate_limit\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 299000000,
+              "status": "passed"
+            },
+            "line": 133,
+            "name": "user makes \"GET\" request to endpoint with query params with \"wrong_auth\" token",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"wrong_auth\"",
+                  "offset": 60
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint_with_query_params_with_token(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 134,
+            "name": "user validates response code as 401",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 2000000,
+              "status": "passed"
+            },
+            "line": 135,
+            "name": "user validates JSON schema for request for Status code 401 for rate limit stats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "401",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_rate_limit_stats(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 136,
+            "name": "user validates rate limit statistics",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_validates_rate_limit_statistics()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetRateLimit"
+          },
+          {
+            "name": "@NonFunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:36.174Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 142,
+        "name": "Verify that Rate Limit API works for authenticated users token in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-rate-limit-api-works-for-authenticated-users-token-in-various-conditions;;4",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 124,
+            "name": "user sets base URL and endpoint as \"/rate_limittt\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/rate_limittt\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 304000000,
+              "status": "passed"
+            },
+            "line": 125,
+            "name": "user makes \"GET\" request to endpoint with query params with \"auth\" token",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"auth\"",
+                  "offset": 60
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint_with_query_params_with_token(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 126,
+            "name": "user validates response code as 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 127,
+            "name": "user validates JSON schema for request for Status code 404 for rate limit stats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_rate_limit_stats(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 128,
+            "name": "user captures rate limit statistics for comparison",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_captures_rate_limit_statistics_for_comparison()"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 129,
+            "name": "user sets base URL and endpoint as \"/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 130,
+            "name": "user adds \"Accept\" as \"application/vnd.github.v3+json\" in header",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Accept\"",
+                  "offset": 10
+                },
+                {
+                  "val": "\"application/vnd.github.v3+json\"",
+                  "offset": 22
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_adds_as_in_header(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 668000000,
+              "status": "passed"
+            },
+            "line": 131,
+            "name": "user makes \"GET\" request to endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 132,
+            "name": "user sets base URL and endpoint as \"/rate_limittt\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/rate_limittt\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 313000000,
+              "status": "passed"
+            },
+            "line": 133,
+            "name": "user makes \"GET\" request to endpoint with query params with \"auth\" token",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"GET\"",
+                  "offset": 11
+                },
+                {
+                  "val": "\"auth\"",
+                  "offset": 60
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint_with_query_params_with_token(java.lang.String,java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 134,
+            "name": "user validates response code as 404",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 135,
+            "name": "user validates JSON schema for request for Status code 404 for rate limit stats",
+            "match": {
+              "arguments": [
+                {
+                  "val": "404",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_rate_limit_stats(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 136,
+            "name": "user validates rate limit statistics",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_validates_rate_limit_statistics()"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@GetRateLimit"
+          },
+          {
+            "name": "@NonFunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:37.468Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 158,
+        "name": "Verify that accessibility works for authenticated users token in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-accessibility-works-for-authenticated-users-token-in-various-conditions;;2",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 146,
+            "name": "user sets base URL and endpoint as \"/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 147,
+            "name": "user makes gist as \"private\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"private\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_gist_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 148,
+            "name": "user creates payload body with 2 files",
+            "match": {
+              "arguments": [
+                {
+                  "val": "2",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_creates_payload_body_with_files(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 947000000,
+              "status": "passed"
+            },
+            "line": 149,
+            "name": "user makes \"POST\" request to endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 150,
+            "name": "user validates response code as 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 11000000,
+              "status": "passed"
+            },
+            "line": 151,
+            "name": "user validates JSON schema for request for Status code 201 for create gist API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_create_gist_api(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 59000000,
+              "status": "passed"
+            },
+            "line": 152,
+            "name": "user validates data received in json response for create gist request",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_validates_data_received_in_json_response_for_create_gist_request()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 153,
+            "name": "user sets base URL and endpoint as \"/users/{username}/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/users/{username}/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1335000000,
+              "status": "passed"
+            },
+            "line": 154,
+            "name": "user validates accessibility for gist when gist type is \"private\" provided Username as \"aakashdahake\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"private\"",
+                  "offset": 56
+                },
+                {
+                  "val": "\"aakashdahake\"",
+                  "offset": 87
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_accessibility_for_gist_when_gist_type_is_provided_username_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CheckAccessibility"
+          },
+          {
+            "name": "@NonFunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      },
+      {
+        "start_timestamp": "2021-04-14T06:10:39.826Z",
+        "before": [
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.scenarioSetup(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "line": 159,
+        "name": "Verify that accessibility works for authenticated users token in various conditions",
+        "description": "",
+        "id": "github-gist-api-testing;verify-that-accessibility-works-for-authenticated-users-token-in-various-conditions;;3",
+        "after": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "stepDefinition.StepDefinition.cleanup()"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario Outline",
+        "steps": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 146,
+            "name": "user sets base URL and endpoint as \"/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "Given "
+          },
+          {
+            "result": {
+              "duration": 1000000,
+              "status": "passed"
+            },
+            "line": 147,
+            "name": "user makes gist as \"public\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"public\"",
+                  "offset": 19
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_gist_as(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 148,
+            "name": "user creates payload body with 3 files",
+            "match": {
+              "arguments": [
+                {
+                  "val": "3",
+                  "offset": 31
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_creates_payload_body_with_files(java.lang.Integer)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 964000000,
+              "status": "passed"
+            },
+            "line": 149,
+            "name": "user makes \"POST\" request to endpoint",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"POST\"",
+                  "offset": 11
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_makes_request_to_endpoint(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 150,
+            "name": "user validates response code as 201",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 32
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_response_code_as(int)"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "duration": 10000000,
+              "status": "passed"
+            },
+            "line": 151,
+            "name": "user validates JSON schema for request for Status code 201 for create gist API",
+            "match": {
+              "arguments": [
+                {
+                  "val": "201",
+                  "offset": 55
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_json_schema_for_request_for_status_code_for_create_gist_api(java.lang.Integer)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 77000000,
+              "status": "passed"
+            },
+            "line": 152,
+            "name": "user validates data received in json response for create gist request",
+            "match": {
+              "location": "stepDefinition.StepDefinition.user_validates_data_received_in_json_response_for_create_gist_request()"
+            },
+            "keyword": "Then "
+          },
+          {
+            "result": {
+              "status": "passed"
+            },
+            "line": 153,
+            "name": "user sets base URL and endpoint as \"/users/{username}/gists\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"/users/{username}/gists\"",
+                  "offset": 35
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_sets_base_url_and_endpoint_as(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 1421000000,
+              "status": "passed"
+            },
+            "line": 154,
+            "name": "user validates accessibility for gist when gist type is \"public\" provided Username as \"aakashdahake\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"public\"",
+                  "offset": 56
+                },
+                {
+                  "val": "\"aakashdahake\"",
+                  "offset": 86
+                }
+              ],
+              "location": "stepDefinition.StepDefinition.user_validates_accessibility_for_gist_when_gist_type_is_provided_username_as(java.lang.String,java.lang.String)"
+            },
+            "keyword": "Then "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@CheckAccessibility"
+          },
+          {
+            "name": "@NonFunctionalTest"
+          },
+          {
+            "name": "@all"
+          }
+        ]
+      }
+    ],
+    "name": "Github Gist API Testing",
+    "description": "",
+    "id": "github-gist-api-testing",
+    "keyword": "Feature",
+    "uri": "file:src/test/java/featureFiles/API_Tests.feature",
+    "tags": []
+  }
+]

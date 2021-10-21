@@ -1,0 +1,401 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "array",
+    "required": [
+        "url",
+        "forks_url",
+        "commits_url",
+        "id",
+        "node_id",
+        "git_pull_url",
+        "git_push_url",
+        "html_url",
+        "files",
+        "public",
+        "created_at",
+        "updated_at",
+        "description",
+        "comments",
+        "user",
+        "comments_url",
+        "owner",
+        "forks",
+        "history",
+        "truncated"
+    ],
+    "properties": {
+        "url": {
+            "$id": "#/properties/url",
+            "type": "string"
+        },
+        "forks_url": {
+            "$id": "#/properties/forks_url",
+            "type": "string"
+        },
+        "commits_url": {
+            "$id": "#/properties/commits_url",
+            "type": "string"
+        },
+        "id": {
+            "$id": "#/properties/id",
+            "type": "string"
+        },
+        "node_id": {
+            "$id": "#/properties/node_id",
+            "type": "string"
+        },
+        "git_pull_url": {
+            "$id": "#/properties/git_pull_url",
+            "type": "string"
+        },
+        "git_push_url": {
+            "$id": "#/properties/git_push_url",
+            "type": "string"
+        },
+        "html_url": {
+            "$id": "#/properties/html_url",
+            "type": "string"
+        },
+        "files": {
+            "$id": "#/properties/files",
+            "type": "object",
+            "patternProperties": {
+                 ".*": {
+                    "$id": "#/properties/files/properties/test55.txt",
+                    "type": "object",
+                    "required": [
+                        "filename",
+                        "type",
+                        "language",
+                        "raw_url",
+                        "size",
+                        "truncated",
+                        "content"
+                    ],
+                    "properties": {
+                        "filename": {
+                            "$id": "#/properties/files/properties/properties/filename",
+                            "type": "string"
+                        },
+                        "type": {
+                            "$id": "#/properties/files/properties/properties/type",
+                            "type": "string"
+                        },
+                        "language": {
+                            "$id": "#/properties/files/properties/properties/language",
+                            "type": ["string", "null"]
+                        },
+                        "raw_url": {
+                            "$id": "#/properties/files/properties/properties/raw_url",
+                            "type": "string"
+                        },
+                        "size": {
+                            "$id": "#/properties/files/properties/properties/size",
+                            "type": "integer"
+                        },
+                        "truncated": {
+                            "$id": "#/properties/files/properties/properties/truncated",
+                            "type": "boolean"
+                        },
+                        "content": {
+                            "$id": "#/properties/files/properties/properties/content",
+                            "type": "string"
+                        }
+                    },
+                    "additionalProperties": true
+                }
+            },
+            "additionalProperties": true
+        },
+        "public": {
+            "$id": "#/properties/public",
+            "type": "boolean"
+        },
+        "created_at": {
+            "$id": "#/properties/created_at",
+            "type": "string"
+        },
+        "updated_at": {
+            "$id": "#/properties/updated_at",
+            "type": "string"
+        },
+        "description": {
+            "$id": "#/properties/description",
+            "type": "string"
+        },
+        "comments": {
+            "$id": "#/properties/comments",
+            "type": "integer"
+        },
+        "user": {
+            "$id": "#/properties/user",
+            "type": "null"
+        },
+        "comments_url": {
+            "$id": "#/properties/comments_url",
+            "type": "string"
+        },
+        "owner": {
+            "$id": "#/properties/owner",
+            "type": "object",
+            "required": [
+                "login",
+                "id",
+                "node_id",
+                "avatar_url",
+                "gravatar_id",
+                "url",
+                "html_url",
+                "followers_url",
+                "following_url",
+                "gists_url",
+                "starred_url",
+                "subscriptions_url",
+                "organizations_url",
+                "repos_url",
+                "events_url",
+                "received_events_url",
+                "type",
+                "site_admin"
+            ],
+            "properties": {
+                "login": {
+                    "$id": "#/properties/owner/properties/login",
+                    "type": "string"
+                },
+                "id": {
+                    "$id": "#/properties/owner/properties/id",
+                    "type": "integer"
+                },
+                "node_id": {
+                    "$id": "#/properties/owner/properties/node_id",
+                    "type": "string"
+                },
+                "avatar_url": {
+                    "$id": "#/properties/owner/properties/avatar_url",
+                    "type": "string"
+                },
+                "gravatar_id": {
+                    "$id": "#/properties/owner/properties/gravatar_id",
+                    "type": "string"
+                },
+                "url": {
+                    "$id": "#/properties/owner/properties/url",
+                    "type": "string"
+                },
+                "html_url": {
+                    "$id": "#/properties/owner/properties/html_url",
+                    "type": "string"
+                },
+                "followers_url": {
+                    "$id": "#/properties/owner/properties/followers_url",
+                    "type": "string"
+                },
+                "following_url": {
+                    "$id": "#/properties/owner/properties/following_url",
+                    "type": "string"
+                },
+                "gists_url": {
+                    "$id": "#/properties/owner/properties/gists_url",
+                    "type": "string"
+                },
+                "starred_url": {
+                    "$id": "#/properties/owner/properties/starred_url",
+                    "type": "string"
+                },
+                "subscriptions_url": {
+                    "$id": "#/properties/owner/properties/subscriptions_url",
+                    "type": "string"
+                },
+                "organizations_url": {
+                    "$id": "#/properties/owner/properties/organizations_url",
+                    "type": "string"
+                },
+                "repos_url": {
+                    "$id": "#/properties/owner/properties/repos_url",
+                    "type": "string"
+                },
+                "events_url": {
+                    "$id": "#/properties/owner/properties/events_url",
+                    "type": "string"
+                },
+                "received_events_url": {
+                    "$id": "#/properties/owner/properties/received_events_url",
+                    "type": "string"
+                },
+                "type": {
+                    "$id": "#/properties/owner/properties/type",
+                    "type": "string"
+                },
+                "site_admin": {
+                    "$id": "#/properties/owner/properties/site_admin",
+                    "type": "boolean"
+                }
+            },
+            "additionalProperties": true
+        },
+        "forks": {
+            "$id": "#/properties/forks",
+            "type": "array"
+        },
+        "history": {
+            "$id": "#/properties/history",
+            "type": "array",
+            "items": {
+                "$id": "#/properties/history/items",
+                "type": "object",
+                "required": [
+                    "user",
+                    "version",
+                    "committed_at",
+                    "change_status",
+                    "url"
+                ],
+                "properties": {
+                    "user": {
+                        "$id": "#/properties/history/items/properties/user",
+                        "type": "object",
+                        "required": [
+                            "login",
+                            "id",
+                            "node_id",
+                            "avatar_url",
+                            "gravatar_id",
+                            "url",
+                            "html_url",
+                            "followers_url",
+                            "following_url",
+                            "gists_url",
+                            "starred_url",
+                            "subscriptions_url",
+                            "organizations_url",
+                            "repos_url",
+                            "events_url",
+                            "received_events_url",
+                            "type",
+                            "site_admin"
+                        ],
+                        "properties": {
+                            "login": {
+                                "$id": "#/properties/history/items/properties/user/properties/login",
+                                "type": "string"
+                            },
+                            "id": {
+                                "$id": "#/properties/history/items/properties/user/properties/id",
+                                "type": "integer"
+                            },
+                            "node_id": {
+                                "$id": "#/properties/history/items/properties/user/properties/node_id",
+                                "type": "string"
+                            },
+                            "avatar_url": {
+                                "$id": "#/properties/history/items/properties/user/properties/avatar_url",
+                                "type": "string"
+                            },
+                            "gravatar_id": {
+                                "$id": "#/properties/history/items/properties/user/properties/gravatar_id",
+                                "type": "string"
+                            },
+                            "url": {
+                                "$id": "#/properties/history/items/properties/user/properties/url",
+                                "type": "string"
+                            },
+                            "html_url": {
+                                "$id": "#/properties/history/items/properties/user/properties/html_url",
+                                "type": "string"
+                            },
+                            "followers_url": {
+                                "$id": "#/properties/history/items/properties/user/properties/followers_url",
+                                "type": "string"
+                            },
+                            "following_url": {
+                                "$id": "#/properties/history/items/properties/user/properties/following_url",
+                                "type": "string"
+                            },
+                            "gists_url": {
+                                "$id": "#/properties/history/items/properties/user/properties/gists_url",
+                                "type": "string"
+                            },
+                            "starred_url": {
+                                "$id": "#/properties/history/items/properties/user/properties/starred_url",
+                                "type": "string"
+                            },
+                            "subscriptions_url": {
+                                "$id": "#/properties/history/items/properties/user/properties/subscriptions_url",
+                                "type": "string"
+                            },
+                            "organizations_url": {
+                                "$id": "#/properties/history/items/properties/user/properties/organizations_url",
+                                "type": "string"
+                            },
+                            "repos_url": {
+                                "$id": "#/properties/history/items/properties/user/properties/repos_url",
+                                "type": "string"
+                            },
+                            "events_url": {
+                                "$id": "#/properties/history/items/properties/user/properties/events_url",
+                                "type": "string"
+                            },
+                            "received_events_url": {
+                                "$id": "#/properties/history/items/properties/user/properties/received_events_url",
+                                "type": "string"
+                            },
+                            "type": {
+                                "$id": "#/properties/history/items/properties/user/properties/type",
+                                "type": "string"
+                            },
+                            "site_admin": {
+                                "$id": "#/properties/history/items/properties/user/properties/site_admin",
+                                "type": "boolean"
+                            }
+                        },
+                        "additionalProperties": true
+                    },
+                    "version": {
+                        "$id": "#/properties/history/items/properties/version",
+                        "type": "string"
+                    },
+                    "committed_at": {
+                        "$id": "#/properties/history/items/properties/committed_at",
+                        "type": "string"
+                    },
+                    "change_status": {
+                        "$id": "#/properties/history/items/properties/change_status",
+                        "type": "object",
+                        "required": [
+                            "total",
+                            "additions",
+                            "deletions"
+                        ],
+                        "properties": {
+                            "total": {
+                                "$id": "#/properties/history/items/properties/change_status/properties/total",
+                                "type": "integer"
+                            },
+                            "additions": {
+                                "$id": "#/properties/history/items/properties/change_status/properties/additions",
+                                "type": "integer"
+                            },
+                            "deletions": {
+                                "$id": "#/properties/history/items/properties/change_status/properties/deletions",
+                                "type": "integer"
+                            }
+                        },
+                        "additionalProperties": true
+                    },
+                    "url": {
+                        "$id": "#/properties/history/items/properties/url",
+                        "type": "string"
+                    }
+                },
+                "additionalProperties": true
+            }
+        },
+        "truncated": {
+            "$id": "#/properties/truncated",
+            "type": "boolean"
+        }
+    },
+    "additionalProperties": true
+}

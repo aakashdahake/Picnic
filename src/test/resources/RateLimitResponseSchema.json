@@ -1,0 +1,221 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "required": [
+        "resources",
+        "rate"
+    ],
+    "properties": {
+        "resources": {
+            "$id": "#/properties/resources",
+            "type": "object",
+            "required": [
+                "core",
+                "search",
+                "graphql",
+                "integration_manifest",
+                "source_import",
+                "code_scanning_upload"
+            ],
+            "properties": {
+                "core": {
+                    "$id": "#/properties/resources/properties/core",
+                    "type": "object",
+                    "required": [
+                        "limit",
+                        "used",
+                        "remaining",
+                        "reset"
+                    ],
+                    "properties": {
+                        "limit": {
+                            "$id": "#/properties/resources/properties/core/properties/limit",
+                            "type": "integer"
+                        },
+                        "used": {
+                            "$id": "#/properties/resources/properties/core/properties/used",
+                            "type": "integer"
+                        },
+                        "remaining": {
+                            "$id": "#/properties/resources/properties/core/properties/remaining",
+                            "type": "integer"
+                        },
+                        "reset": {
+                            "$id": "#/properties/resources/properties/core/properties/reset",
+                            "type": "integer"
+                        }
+                    }
+                },
+                "search": {
+                    "$id": "#/properties/resources/properties/search",
+                    "type": "object",
+                    "required": [
+                        "limit",
+                        "used",
+                        "remaining",
+                        "reset"
+                    ],
+                    "properties": {
+                        "limit": {
+                            "$id": "#/properties/resources/properties/search/properties/limit",
+                            "type": "integer"
+                        },
+                        "used": {
+                            "$id": "#/properties/resources/properties/search/properties/used",
+                            "type": "integer"
+                        },
+                        "remaining": {
+                            "$id": "#/properties/resources/properties/search/properties/remaining",
+                            "type": "integer"
+                        },
+                        "reset": {
+                            "$id": "#/properties/resources/properties/search/properties/reset",
+                            "type": "integer"
+                        }
+                    }
+                },
+                "graphql": {
+                    "$id": "#/properties/resources/properties/graphql",
+                    "type": "object",
+                    "required": [
+                        "limit",
+                        "used",
+                        "remaining",
+                        "reset"
+                    ],
+                    "properties": {
+                        "limit": {
+                            "$id": "#/properties/resources/properties/graphql/properties/limit",
+                            "type": "integer"
+                        },
+                        "used": {
+                            "$id": "#/properties/resources/properties/graphql/properties/used",
+                            "type": "integer"
+                        },
+                        "remaining": {
+                            "$id": "#/properties/resources/properties/graphql/properties/remaining",
+                            "type": "integer"
+                        },
+                        "reset": {
+                            "$id": "#/properties/resources/properties/graphql/properties/reset",
+                            "type": "integer"
+                        }
+                    }
+                },
+                "integration_manifest": {
+                    "$id": "#/properties/resources/properties/integration_manifest",
+                    "type": "object",
+                    "required": [
+                        "limit",
+                        "used",
+                        "remaining",
+                        "reset"
+                    ],
+                    "properties": {
+                        "limit": {
+                            "$id": "#/properties/resources/properties/integration_manifest/properties/limit",
+                            "type": "integer"
+                        },
+                        "used": {
+                            "$id": "#/properties/resources/properties/integration_manifest/properties/used",
+                            "type": "integer"
+                        },
+                        "remaining": {
+                            "$id": "#/properties/resources/properties/integration_manifest/properties/remaining",
+                            "type": "integer"
+                        },
+                        "reset": {
+                            "$id": "#/properties/resources/properties/integration_manifest/properties/reset",
+                            "type": "integer"
+                        }
+                    }
+                },
+                "source_import": {
+                    "$id": "#/properties/resources/properties/source_import",
+                    "type": "object",
+                    "required": [
+                        "limit",
+                        "used",
+                        "remaining",
+                        "reset"
+                    ],
+                    "properties": {
+                        "limit": {
+                            "$id": "#/properties/resources/properties/source_import/properties/limit",
+                            "type": "integer"
+                        },
+                        "used": {
+                            "$id": "#/properties/resources/properties/source_import/properties/used",
+                            "type": "integer"
+                        },
+                        "remaining": {
+                            "$id": "#/properties/resources/properties/source_import/properties/remaining",
+                            "type": "integer"
+                        },
+                        "reset": {
+                            "$id": "#/properties/resources/properties/source_import/properties/reset",
+                            "type": "integer"
+                        }
+                    }
+                },
+                "code_scanning_upload": {
+                    "$id": "#/properties/resources/properties/code_scanning_upload",
+                    "type": "object",
+                    "required": [
+                        "limit",
+                        "used",
+                        "remaining",
+                        "reset"
+                    ],
+                    "properties": {
+                        "limit": {
+                            "$id": "#/properties/resources/properties/code_scanning_upload/properties/limit",
+                            "type": "integer"
+                        },
+                        "used": {
+                            "$id": "#/properties/resources/properties/code_scanning_upload/properties/used",
+                            "type": "integer"
+                        },
+                        "remaining": {
+                            "$id": "#/properties/resources/properties/code_scanning_upload/properties/remaining",
+                            "type": "integer"
+                        },
+                        "reset": {
+                            "$id": "#/properties/resources/properties/code_scanning_upload/properties/reset",
+                            "type": "integer"
+                        }
+                    }
+                }
+            }
+        },
+        "rate": {
+            "$id": "#/properties/rate",
+            "type": "object",
+            "required": [
+                "limit",
+                "used",
+                "remaining",
+                "reset"
+            ],
+            "properties": {
+                "limit": {
+                    "$id": "#/properties/rate/properties/limit",
+                    "type": "integer"
+                },
+                "used": {
+                    "$id": "#/properties/rate/properties/used",
+                    "type": "integer"
+                },
+                "remaining": {
+                    "$id": "#/properties/rate/properties/remaining",
+                    "type": "integer"
+                },
+                "reset": {
+                    "$id": "#/properties/rate/properties/reset",
+                    "type": "integer"
+                }
+            }
+        }
+    }
+}

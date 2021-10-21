@@ -1,0 +1,341 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="0" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="28" time="34.119">
+<testcase classname="Github Gist API Testing" name="Verify that Create Gist API works in various conditions" time="4.302">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/gists"...........................passed
+Then user adds "Accept" as "application/vnd.github.v3+json" in header.......passed
+And user adds description to gist as "Test files"...........................passed
+And user makes gist as "private"............................................passed
+Then user creates payload body with 5 files.................................passed
+When user makes "POST" request to endpoint..................................passed
+Then user validates response code as 201....................................passed
+And user validates JSON schema for request for Status code 201 for create gist API.passed
+Then user validates data received in json response for create gist request..passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that Create Gist API works in various conditions 2" time="1.429">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/gists"...........................passed
+Then user adds "Accept" as "application/json" in header.....................passed
+And user adds description to gist as "Test data"............................passed
+And user makes gist as "public".............................................passed
+Then user creates payload body with 3 files.................................passed
+When user makes "POST" request to endpoint..................................passed
+Then user validates response code as 201....................................passed
+And user validates JSON schema for request for Status code 201 for create gist API.passed
+Then user validates data received in json response for create gist request..passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that Create Gist API works in various conditions 3" time="1.561">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/gists"...........................passed
+Then user adds "Accept" as "application/json" in header.....................passed
+And user adds description to gist as "".....................................passed
+And user makes gist as "public".............................................passed
+Then user creates payload body with 2 files.................................passed
+When user makes "POST" request to endpoint..................................passed
+Then user validates response code as 201....................................passed
+And user validates JSON schema for request for Status code 201 for create gist API.passed
+Then user validates data received in json response for create gist request..passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that Create Gist API works in various conditions 4" time="1.245">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/gists"...........................passed
+Then user adds "Accept" as "application/x-www-form-urlencoded" in header....passed
+And user adds description to gist as "00000000000"..........................passed
+And user makes gist as "private"............................................passed
+Then user creates payload body with 2 files.................................passed
+When user makes "POST" request to endpoint..................................passed
+Then user validates response code as 201....................................passed
+And user validates JSON schema for request for Status code 201 for create gist API.passed
+Then user validates data received in json response for create gist request..passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that Create Gist API works in various conditions 5" time="0.376">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/gists"...........................passed
+Then user adds "Accept" as "application/vnd.github.v3+json" in header.......passed
+And user adds description to gist as "asdasdasd"............................passed
+And user makes gist as "public".............................................passed
+Then user creates payload body with 0 files.................................passed
+When user makes "POST" request to endpoint..................................passed
+Then user validates response code as 422....................................passed
+And user validates JSON schema for request for Status code 422 for create gist API.passed
+Then user validates data received in json response for create gist request..passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that Create Gist API works in various conditions 6" time="0.351">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/gistsss".........................passed
+Then user adds "Accept" as "application/vnd.github.v3+json" in header.......passed
+And user adds description to gist as "asdasdasd"............................passed
+And user makes gist as "public".............................................passed
+Then user creates payload body with 3 files.................................passed
+When user makes "POST" request to endpoint..................................passed
+Then user validates response code as 404....................................passed
+And user validates JSON schema for request for Status code 404 for create gist API.passed
+Then user validates data received in json response for create gist request..passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that Read Gist API works in various conditions" time="2.08">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/gists"...........................passed
+Then user adds "Accept" as "application/vnd.github.v3+json" in header.......passed
+And user adds description to gist as "Test files"...........................passed
+And user makes gist as "private"............................................passed
+Then user creates payload body with 2 files.................................passed
+When user makes "POST" request to endpoint..................................passed
+Then user validates response code as 201....................................passed
+And user validates JSON schema for request for Status code 201 for create gist API.passed
+Then user validates data received in json response for create gist request..passed
+When user sets base URL and endpoint as "/gists/{gist_Id}"..................passed
+Then user makes "GET" request to endpoint with path params "gist_Id" as "CreatedAbove" with "auth" token.passed
+And user validates response code as 200.....................................passed
+And user validates JSON schema for request for Status code 200 for read gist API.passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that Delete Gist API works in various conditions" time="2.16">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/gists"...........................passed
+Then user adds "Accept" as "application/vnd.github.v3+json" in header.......passed
+And user adds description to gist as "Test files"...........................passed
+And user makes gist as "private"............................................passed
+Then user creates payload body with 2 files.................................passed
+When user makes "POST" request to endpoint..................................passed
+Then user validates response code as 201....................................passed
+And user validates JSON schema for request for Status code 201 for create gist API.passed
+Then user validates data received in json response for create gist request..passed
+Then user sets base URL and endpoint as "/gists/{gist_Id}"..................passed
+When user makes "DELETE" request to endpoint with path params "gist_Id" as "CreatedAbove" with "auth" token.passed
+Then user validates response code as 204....................................passed
+When user makes "GET" request to endpoint with path params "gist_Id" as "CreatedAbove" with "auth" token.passed
+Then user validates response code as 404....................................passed
+And user validates JSON schema for request for Status code 404 for read gist API.passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that Delete Gist API works in various conditions 2" time="1.896">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/gists"...........................passed
+Then user adds "Accept" as "application/json" in header.....................passed
+And user adds description to gist as "ABCCD"................................passed
+And user makes gist as "public".............................................passed
+Then user creates payload body with 3 files.................................passed
+When user makes "POST" request to endpoint..................................passed
+Then user validates response code as 201....................................passed
+And user validates JSON schema for request for Status code 201 for create gist API.passed
+Then user validates data received in json response for create gist request..passed
+Then user sets base URL and endpoint as "/gists/{gist_Id}"..................passed
+When user makes "DELETE" request to endpoint with path params "gist_Id" as "CreatedAbove" with "auth" token.passed
+Then user validates response code as 204....................................passed
+When user makes "GET" request to endpoint with path params "gist_Id" as "CreatedAbove" with "auth" token.passed
+Then user validates response code as 404....................................passed
+And user validates JSON schema for request for Status code 404 for read gist API.passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that Delete Gist API works in various conditions 3" time="2.04">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/gists"...........................passed
+Then user adds "Accept" as "application/json" in header.....................passed
+And user adds description to gist as "Random"...............................passed
+And user makes gist as "public".............................................passed
+Then user creates payload body with 3 files.................................passed
+When user makes "POST" request to endpoint..................................passed
+Then user validates response code as 201....................................passed
+And user validates JSON schema for request for Status code 201 for create gist API.passed
+Then user validates data received in json response for create gist request..passed
+Then user sets base URL and endpoint as "/gists/{gist_Id}"..................passed
+When user makes "DELETE" request to endpoint with path params "gist_Id" as "WrongGist" with "auth" token.passed
+Then user validates response code as 404....................................passed
+When user makes "GET" request to endpoint with path params "gist_Id" as "WrongGist" with "auth" token.passed
+Then user validates response code as 404....................................passed
+And user validates JSON schema for request for Status code 404 for read gist API.passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that Read Gist API works for unauthenticated user in various conditions" time="1.044">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/users/{username}/gists"..........passed
+When user makes "GET" request to endpoint with path params "username" as "aakashdahake" with "auth" token.passed
+Then user validates response code as 200....................................passed
+And user validates JSON schema for request for Status code 200 for list user gists.passed
+Then user validates data received in json response for listing user as "aakashdahake".passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that Read Gist API works for unauthenticated user in various conditions 2" time="0.318">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/users/{username}/gists"..........passed
+When user makes "GET" request to endpoint with path params "username" as "********************" with "auth" token.passed
+Then user validates response code as 404....................................passed
+And user validates JSON schema for request for Status code 404 for list user gists.passed
+Then user validates data received in json response for listing user as "********************".passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that Read Gist API works for unauthenticated user in various conditions 3" time="0.341">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/users/{username}/gists"..........passed
+When user makes "GET" request to endpoint with path params "username" as "" with "auth" token.passed
+Then user validates response code as 404....................................passed
+And user validates JSON schema for request for Status code 404 for list user gists.passed
+Then user validates data received in json response for listing user as ""...passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that Read Gist API works for authenticated users token in various conditions" time="0.651">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/gists"...........................passed
+Then user adds query param "since" as "2021-03-26T03:19:53.895Z" to endpoint path.passed
+Then user adds query param "per_page" as "1" to endpoint path...............passed
+Then user adds query param "page" as "1" to endpoint path...................passed
+When user makes "GET" request to endpoint with query params with "auth" token.passed
+Then user validates response code as 200....................................passed
+And user validates JSON schema for request for Status code 200 for list authenticated user gists.passed
+Then user validates data received in json response for listing authenticated user gists.passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that Read Gist API works for authenticated users token in various conditions 2" time="0.341">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/gists"...........................passed
+Then user adds query param "since" as "2021-04-26T03:19:53.895Z" to endpoint path.passed
+Then user adds query param "per_page" as "0" to endpoint path...............passed
+Then user adds query param "page" as "1" to endpoint path...................passed
+When user makes "GET" request to endpoint with query params with "auth" token.passed
+Then user validates response code as 200....................................passed
+And user validates JSON schema for request for Status code 200 for list authenticated user gists.passed
+Then user validates data received in json response for listing authenticated user gists.passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that Read Gist API works for authenticated users token in various conditions 3" time="0.458">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/gists"...........................passed
+Then user adds query param "since" as "2021-03-20T03:19:53.895Z" to endpoint path.passed
+Then user adds query param "per_page" as "5" to endpoint path...............passed
+Then user adds query param "page" as "0" to endpoint path...................passed
+When user makes "GET" request to endpoint with query params with "auth" token.passed
+Then user validates response code as 200....................................passed
+And user validates JSON schema for request for Status code 200 for list authenticated user gists.passed
+Then user validates data received in json response for listing authenticated user gists.passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that Read Gist API works for authenticated users token in various conditions 4" time="0.303">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/gistss"..........................passed
+Then user adds query param "since" as "2021-03-26T03:19:53.895Z" to endpoint path.passed
+Then user adds query param "per_page" as "1" to endpoint path...............passed
+Then user adds query param "page" as "1" to endpoint path...................passed
+When user makes "GET" request to endpoint with query params with "auth" token.passed
+Then user validates response code as 404....................................passed
+And user validates JSON schema for request for Status code 404 for list authenticated user gists.passed
+Then user validates data received in json response for listing authenticated user gists.passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that Read Gist API works for authenticated users token in various conditions 5" time="0.359">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/gists"...........................passed
+Then user adds query param "since" as "2****///****" to endpoint path.......passed
+Then user adds query param "per_page" as "1" to endpoint path...............passed
+Then user adds query param "page" as "1" to endpoint path...................passed
+When user makes "GET" request to endpoint with query params with "auth" token.passed
+Then user validates response code as 422....................................passed
+And user validates JSON schema for request for Status code 422 for list authenticated user gists.passed
+Then user validates data received in json response for listing authenticated user gists.passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that List Gist API works for authenticated users token in various conditions" time="0.907">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/gists"...........................passed
+Then user adds "Accept" as "application/vnd.github.v3+json" in header.......passed
+When user makes "GET" request to endpoint...................................passed
+Then user validates response code as 200....................................passed
+And user validates JSON schema for request for Status code 200 for list authenticated user gists.passed
+Then user validates data received in json response for listing authenticated user gists.passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that List Gist API works for authenticated users token in various conditions 2" time="0.899">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/gists"...........................passed
+Then user adds "Accept" as "application/json" in header.....................passed
+When user makes "GET" request to endpoint...................................passed
+Then user validates response code as 200....................................passed
+And user validates JSON schema for request for Status code 200 for list authenticated user gists.passed
+Then user validates data received in json response for listing authenticated user gists.passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that List Gist API works for authenticated users token in various conditions 3" time="0.882">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/gists"...........................passed
+Then user adds "Accept" as "application/vnd.github.VERSION.base64" in header.passed
+When user makes "GET" request to endpoint...................................passed
+Then user validates response code as 200....................................passed
+And user validates JSON schema for request for Status code 200 for list authenticated user gists.passed
+Then user validates data received in json response for listing authenticated user gists.passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that List Gist API works for authenticated users token in various conditions 4" time="0.618">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/gists"...........................passed
+Then user adds "Accept" as "application/vnd.github.VERSION.raw" in header...passed
+When user makes "GET" request to endpoint...................................passed
+Then user validates response code as 200....................................passed
+And user validates JSON schema for request for Status code 200 for list authenticated user gists.passed
+Then user validates data received in json response for listing authenticated user gists.passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that List Gist API works for authenticated users token in various conditions 5" time="0.304">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/gistss"..........................passed
+Then user adds "Accept" as "application/vnd.github.v3+json" in header.......passed
+When user makes "GET" request to endpoint...................................passed
+Then user validates response code as 404....................................passed
+And user validates JSON schema for request for Status code 404 for list authenticated user gists.passed
+Then user validates data received in json response for listing authenticated user gists.passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that Rate Limit API works for authenticated users token in various conditions" time="1.559">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/rate_limit"......................passed
+When user makes "GET" request to endpoint with query params with "auth" token.passed
+Then user validates response code as 200....................................passed
+And user validates JSON schema for request for Status code 200 for rate limit stats.passed
+And user captures rate limit statistics for comparison......................passed
+When user sets base URL and endpoint as "/gists"............................passed
+Then user adds "Accept" as "application/vnd.github.v3+json" in header.......passed
+When user makes "GET" request to endpoint...................................passed
+Then user sets base URL and endpoint as "/rate_limit".......................passed
+When user makes "GET" request to endpoint with query params with "auth" token.passed
+Then user validates response code as 200....................................passed
+And user validates JSON schema for request for Status code 200 for rate limit stats.passed
+Then user validates rate limit statistics...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that Rate Limit API works for authenticated users token in various conditions 2" time="1.245">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/rate_limit"......................passed
+When user makes "GET" request to endpoint with query params with "wrong_auth" token.passed
+Then user validates response code as 401....................................passed
+And user validates JSON schema for request for Status code 401 for rate limit stats.passed
+And user captures rate limit statistics for comparison......................passed
+When user sets base URL and endpoint as "/gists"............................passed
+Then user adds "Accept" as "application/vnd.github.v3+json" in header.......passed
+When user makes "GET" request to endpoint...................................passed
+Then user sets base URL and endpoint as "/rate_limit".......................passed
+When user makes "GET" request to endpoint with query params with "wrong_auth" token.passed
+Then user validates response code as 401....................................passed
+And user validates JSON schema for request for Status code 401 for rate limit stats.passed
+Then user validates rate limit statistics...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that Rate Limit API works for authenticated users token in various conditions 3" time="1.291">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/rate_limittt"....................passed
+When user makes "GET" request to endpoint with query params with "auth" token.passed
+Then user validates response code as 404....................................passed
+And user validates JSON schema for request for Status code 404 for rate limit stats.passed
+And user captures rate limit statistics for comparison......................passed
+When user sets base URL and endpoint as "/gists"............................passed
+Then user adds "Accept" as "application/vnd.github.v3+json" in header.......passed
+When user makes "GET" request to endpoint...................................passed
+Then user sets base URL and endpoint as "/rate_limittt".....................passed
+When user makes "GET" request to endpoint with query params with "auth" token.passed
+Then user validates response code as 404....................................passed
+And user validates JSON schema for request for Status code 404 for rate limit stats.passed
+Then user validates rate limit statistics...................................passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that accessibility works for authenticated users token in various conditions" time="2.355">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/gists"...........................passed
+And user makes gist as "private"............................................passed
+Then user creates payload body with 2 files.................................passed
+When user makes "POST" request to endpoint..................................passed
+Then user validates response code as 201....................................passed
+And user validates JSON schema for request for Status code 201 for create gist API.passed
+Then user validates data received in json response for create gist request..passed
+When user sets base URL and endpoint as "/users/{username}/gists"...........passed
+Then user validates accessibility for gist when gist type is "private" provided Username as "aakashdahake".passed
+]]></system-out>
+</testcase>
+<testcase classname="Github Gist API Testing" name="Verify that accessibility works for authenticated users token in various conditions 2" time="2.477">
+<system-out><![CDATA[Given user sets base URL and endpoint as "/gists"...........................passed
+And user makes gist as "public".............................................passed
+Then user creates payload body with 3 files.................................passed
+When user makes "POST" request to endpoint..................................passed
+Then user validates response code as 201....................................passed
+And user validates JSON schema for request for Status code 201 for create gist API.passed
+Then user validates data received in json response for create gist request..passed
+When user sets base URL and endpoint as "/users/{username}/gists"...........passed
+Then user validates accessibility for gist when gist type is "public" provided Username as "aakashdahake".passed
+]]></system-out>
+</testcase>
+</testsuite>

@@ -1,0 +1,26 @@
+{
+    "$schema": "http://json-schema.org/draft-07/schema",
+    "$id": "http://example.com/example.json",
+    "type": "object",
+    "const": {
+        "message": "Not Found",
+        "documentation_url": "https://docs.github.com/rest"
+    },
+    "required": [
+        "message",
+        "documentation_url"
+    ],
+    "properties": {
+        "message": {
+            "$id": "#/properties/message",
+            "type": "string",
+            "const": "Not Found"
+        },
+        "documentation_url": {
+            "$id": "#/properties/documentation_url",
+            "type": "string",
+            "const": "https://docs.github.com/rest"
+        }
+    },
+    "additionalProperties": true
+}
